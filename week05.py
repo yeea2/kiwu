@@ -1,12 +1,11 @@
+
 import requests
 
+# Moon day(%m) + Sunrise(%S) + 현재 날씨 요약(%c+%t)
+url = url = "https://wttr.in/seoul?format=Moon:%m+Sunrise:%S+LocalTime:%l"
 
-url = f"https://wttr.in/seoul?format=%C+%t"
-# url = f"https://kin.naver.com/park"
-# url = f"https://wttr.in/incheon?&n&Q"
-# url = f"https://wttr.in/incheon?&0&Q"
 response = requests.get(url)
-print(response)
+
 print(response.status_code)
 if response.status_code == 200:
     print(response.text.strip())
