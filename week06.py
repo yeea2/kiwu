@@ -21,3 +21,5 @@ print(l1, type(l1))
 print(a1, type(a1), a1.shape)
 print(a2, type(a2), a2.shape)
 print(a3, type(a3), a3.shape)
+
+2025-10-15
